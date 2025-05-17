@@ -1,7 +1,5 @@
 <template>
-   <div>
-     <HiddenTimer />
-   </div>
+   <HiddenTimer />
  </template>
  
  <script setup>
