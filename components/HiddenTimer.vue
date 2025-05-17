@@ -38,8 +38,8 @@
    isRunning.value = true;
  
    // Для теста: const delay = 10 * 1000; // 10 секунд
-   // const delay = (Math.floor(Math.random() * 6) + 10) * 60 * 1000; // 10-15 минут
-   const delay = 10 * 1000;
+   const delay = (Math.floor(Math.random() * 6) + 10) * 60 * 1000; // 10-15 минут
+   // const delay = 10 * 1000;
    console.log(`Timer set for ${delay / 1000 / 60} minutes`);
  
    try {
