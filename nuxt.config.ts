@@ -52,9 +52,9 @@ export default defineNuxtConfig({
       type: 'module',
     },
     workbox: {
-      cacheId: 'hidden-timer-v5', // Обновляем кэш
+      cacheId: 'hidden-timer-v6', // Обновляем кэш
       globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
-      importScripts: ['/sw.js'], // Подключаем кастомный сервис-воркер
+      importScripts: ['/sw.js'],
       runtimeCaching: [
         {
           urlPattern: /\.(?:png|jpg|jpeg|svg|ico)$/,
