@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@vite-pwa/nuxt'],
+  modules: ['@vite-pwa/nuxt', '@nuxtjs/tailwindcss'],
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
@@ -8,6 +8,9 @@ export default defineNuxtConfig({
       lang: 'ru',
       start_url: '/',
       display: 'standalone',
+      srcDir: 'public',
+      filename: 'sw.ts',
+      strategies: 'injectManifest',
       background_color: '#ffffff',
       theme_color: '#3b82f6',
       icons: [
